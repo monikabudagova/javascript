@@ -70,6 +70,12 @@
 //              (login == 'директор') : message = 'здравствуйте':
 //              (login == "") : message ="нет логина":
 //             message 
-let login, pass
+// let login, pass
 
-let resulut = (login == "007") || (pass == "4923") ? 'добро пожаловать студент'
+// let resulut = (login == "007") || (pass == "4923") ?  'добро пожаловать студент'
+let login = prompt('пароль')
+let pass = prompt('логин')
+
+let resulut = (login == "admin") || (pass == "4923") ?  'добро пожаловать админ':
+              (login == "007") || (pass == "4923") ?  'добро пожаловать студент':
+              'доступ закрыт'
