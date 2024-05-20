@@ -1,8 +1,8 @@
-let a = 1
-let b = 1
+let login, pass
 
-alert(a + b); // 12
+login = prompt('ведите свой логин')
+pass = prompt('ведите свой пароль')
 
-// let a = prompt("Первое число?", 1);
-// let b = prompt("Второе число?", 2);
-
+if(login = 'admin'){
+    console.log('добро пожаловать админ')
+}
