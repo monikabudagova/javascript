@@ -1,12 +1,8 @@
-let a = +prompt("Первое число?", 1);
-let b = +prompt("Второе число?", 2);
+let a = 1
+let b = 1
 
-alert(a + b); // 3
+alert(a + b); // 12
 
-// a = 4 
-// x = 5 
+// let a = prompt("Первое число?", 1);
+// let b = prompt("Второе число?", 2);
 
-// a = 2
-// b = 2
-// c = 2
-// d = 1
