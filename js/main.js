@@ -1,5 +1,2 @@
-let a 
-let b = 5
-console.log(a) //underfined
-console.log(a &&=b)
-console.log(a) //5
+for(let i = 0; i < 19;i++)
+console.log(i);
