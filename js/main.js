@@ -1,40 +1,111 @@
-// let name = 'моника'//глобальная переменная
-// function showMessage() {
-//     name = 'петя'
-//    let  name = 'м'//локальная переменная
+// let age = Math.abs(Math.trunc+prompt("Возраст?"))
 
-// }
+// let message = age <= 2
+//     ? "Ку-ку, малыш! А кто тебя вообще пустил за компьютер?"
+//     : age <= 12
+//     ? "Школоло! Трям-с!"
+//     : age < 18
+//     ? "Юным пионерам горячий привет!"
+//     : age <= 60
+//     ? "Вай, взрослые и зрелые люди! Добрый день!"
+//     : "Возраст заслуживает уважения!"
+// alert(message)
 
-// console.log(name)//моника
-// showMessage()//вызвали функцию
+// let nmb = Math.abs(Math.trunc(+prompt("Нажмите на клавиатуре клавишу с цифрой от 0 до 9: ")))
+//   switch (nmb) {
+//     case 0:
+//       alert('На данной клавише верхний спецсимвол ")"')
+//       break
+//     case 1:
+//       alert('На данной клавише верхний спецсимвол "!"')
+//       break
+//     case 2:
+//       alert('На данной клавише верхний спецсимвол "@"')
+//       break
+//     case 3:
+//       alert('На данной клавише верхний спецсимвол "#"')
+//       break
+//     case 4:
+//       alert('На данной клавише верхний спецсимвол "$"')
+//       break
+//     case 5:
+//       alert('На данной клавише верхний спецсимвол "%"')
+//       break
+//     case 6:
+//       alert('На данной клавише верхний спецсимвол "^"')
+//       break
+//     case 7:
+//       alert('На данной клавише верхний спецсимвол "&"')
+//       break
+//     case 8:
+//       alert('На данной клавише верхний спецсимвол "*"')
+//       break
+//     case 9:
+//       alert('На данной клавише верхний спецсимвол "("')
+//       break
+//     default:
+//       alert("Вы не ввели число от 0 до 9!")
+//       break
+//   }
 
-// console.log(name)//петя
+// alert("Определить количество чисел в введенном числе.")
+//   let n = Math.abs(+prompt("Введите число: "))
+//   let counter = 0
+//   while (n > 0) {
+//     n = Math.trunc(n / 10)
+//     counter++;
+//   }
+//   alert(`В введенном вами числе (в его целой части) ${counter} цифр.`)
+// task_4()
 
-// function message(a){
-//     console.log(`привет ${a}`);
-// }
-// message('moniks')
+// alert("Запросить у пользователя число и вывести все делители этого числа.")
+//   let n = +prompt("Введите число: ")
+//   let new_n = Math.abs(n)
+//   let divisors = ""
+//   let i = 1;
+//   do {
+//     if (new_n % i == 0) {
+//       divisors += i + ","
+//     }
+//     i++
+//   } while (i <= new_n)
+//   alert(`У числа ${n} следующие делители: ${divisors}`)
 
-// function message(a, b){
-//     console.log(b);
-// }
-// message('moniks')//undefined
+// task_3();
 
-// function sum(a, b){
-//     return a + b
-//     console.log(a + b);
-// }
-// let result = sum(1,2)
-// console.log(result);
+// alert("Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 - если первое больше, чем второе и 0 - если числа равны.")
+//   let x = +prompt("Введите первое число для сравнения ")
+//   let y = +prompt("Введите второе число для сравнения ")
 
-//   function checkAge(age) {
-//     return result = (age > 18) ? true : confirm('Родители разрешили?')
-// }
-//   checkAge()
+// function Task1() {
+//     function Compare(a, b) {
+//       if (a < b) {
+//         return -1
+//       } else if (a > b) {
+//         return 1;
+//       } else if (a == b) {
+//         return 0
+//       } else {
+//         return "Вы ошиблись при вводе чисел"
+//       }
+//     }
+//     alert(Compare(x, y))
+//   }
+//   Task1()
 
-function sum(num){
-    let num = 3
-    for(let i = 1;i <= num;i++) sum += i
-    console.log(sum);
-}
-sum(num)
+alert( "Написать функцию, которая вычисляет факториал переданного числа")
+  function Task2() {
+    function Factorial(n) {
+      if (n == 1) return 1
+      return n * Factorial(n - 1)
+    }
+    let x = 1;
+    do {
+      x = Math.trunc(
+        +prompt("Для вычисления факториала введите положительное число от 1: ")
+      )
+    } while (x < 1);
+    alert(Factorial(x))
+  }
+  Task2()
+  
